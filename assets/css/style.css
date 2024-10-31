@@ -1,0 +1,371 @@
+/* ========= INFORMATION ============================
+	- document:    MyStem Taxonomy Settings!
+	- author:      Dmytro Lobov 
+	- url:         https://wordpress.org/plugins/mystem-taxonomy-settings/
+	- version:     1.0
+	- description: The extension for a theme MyStem - https://wordpress.org/themes/mystem/
+	- website:     https://mystemplus.com/
+	
+==================================================== */
+
+/*--------------------------------------------------------------
+	Category Tamplate
+--------------------------------------------------------------*/
+#full-width {
+	width: 100%;
+}
+.cat-grid {
+	display: flex;	
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: flex-start;
+}
+.cat-grid article{
+	width: 48%;
+	margin-bottom: 15px;
+}
+.cat-grid.third article{
+	width: 31%;
+	margin-bottom: 15px;
+}
+.cat-grid.fourth article{
+	width: 23%;
+	margin-bottom: 15px;
+}
+
+.cat-grid article .comments-link{
+	display: none;
+} 
+.cat-grid.third .entry-header, .cat-grid.fourth .entry-header{
+	padding: 0 10px;
+}
+.cat-grid.third h4{
+	font-size: 16px;
+	margin-bottom: 0;
+}
+.cat-grid.third .entry-summary, .cat-grid.fourth .entry-summary {
+	padding: 25px 10px;
+}
+
+#primary .cat-classic .comments-link, .cat-classic .continue-reading, .cat-grid .continue-reading {
+	display: none;
+}
+
+.type-download .download-description {
+    margin: 10px 0;
+}
+
+@media screen and (min-width: 767px) {
+	.cat-classic article {
+		display: flex;	
+		justify-content: space-between;
+	}
+	.cat-classic article .post-img {
+		width: 200px;
+		height: 200px;
+	}
+	.cat-classic article .post-img img {			
+		width: 200px;
+		height: 200px;
+	}
+	
+	.cat-classic article .post-content {
+		width: 100%;
+		padding: 0 10px;
+	}
+	
+	.cat-classic .entry-header {
+		padding: 0;
+	}
+	.cat-classic .entry-title {
+		padding-top: 5px;
+		margin-bottom: 0;
+	}
+	
+	.cat-classic .entry-summary, .cat-classic .entry-summary p {
+		padding: 0;
+		margin: 0;
+	}
+	
+}
+
+@media screen and (max-width: 767px) {
+	.cat-grid article, .cat-grid.third article, .cat-grid.fourth article{
+		width: 100%;
+	}		
+}
+
+
+/*--------------------------------------------------------------
+	Easy Digital Downloads
+--------------------------------------------------------------*/
+.edd-product .entry-title span {
+	float: right;
+}
+.edd-product .price {
+	float: right;
+	font-weight: 700;
+	font-size: 1.2em;
+}
+.edd-product .avatar {		
+	border-radius: 25px;
+}
+.edd-product .product-rating {
+	float: right;
+	color: #ffc000;		
+}		
+
+.edd-product .cat-classic .post-content {
+	position: relative;
+}
+
+.edd-product .under-excerpt {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	padding-right: 20px;
+	
+}
+
+/* Widget Download Details */
+
+.widget_edd_product_details ul li:before{
+	content: none;		
+}
+.widget_edd_product_details .edd_price_options {
+	font-size: 16px;
+}
+.widget_edd_product_details .edd_price_option_price {
+	font-weight: bold;
+}
+
+.widget_edd_product_details .edd_purchase_submit_wrapper {
+	text-align:center;
+}
+.widget_edd_product_details .edd_purchase_submit_wrapper a {
+	display: block;
+	width: 100%;
+	font-size: 18px;
+}
+.edd_price_options li label {
+	cursor:pointer;
+}
+
+/* Widget MyStem Downloads Details */
+
+.widget_edd_product_details .edd_price_option_sep {
+	display: none !important;
+}
+.widget_edd_product_details .edd_price_option_price {
+	float: right;
+}
+
+
+
+.widget_mystem_download_details_widget ul {
+	font-size: 14px;
+}
+.widget_mystem_download_details_widget ul li:before, .widget_mystem_edd_author_items_widget ul li:before{
+	content: none;
+}
+.widget_mystem_download_details_widget ul li span {
+	float:right;
+}
+
+.widget_mystem_download_details_widget a.changelog {
+	padding-left: 8px;
+}
+.widget_mystem_download_details_widget .edd-rating {
+	color: #FFD700;
+	cursor: pointer;
+}
+.widget_mystem_edd_author_items_widget .mystem-edd-download, .widget_mystem_edd_downloads_widget .mystem-edd-download{
+	display: flex;	
+}	
+.widget_mystem_edd_author_items_widget .widget-img img, .widget_mystem_edd_downloads_widget .widget-img img{
+	margin: 2px
+}	
+.mystem-edd-download .widget-img {	
+	width: 70px;
+	text-align: center;
+}
+.mystem-edd-download .mystem-edd-download-content {
+	justify-content: flex-start;
+	width: 100%;
+	padding-left: 10px;
+}
+.widget_mystem_edd_author_items_widget .downloads-title, .widget_mystem_edd_downloads_widget .downloads-title{
+	font-weight: 700;
+	font-size: 1em;
+}
+.widget_mystem_edd_author_items_widget .edd-downloads-meta, .widget_mystem_edd_downloads_widget .edd-downloads-meta{
+	display:block;	
+}
+.widget_mystem_edd_author_items_widget .downloads-price, .widget_mystem_edd_downloads_widget .downloads-price{
+	/* font-weight: 700; */
+}
+.widget_mystem_edd_author_items_widget .downloads-category, .widget_mystem_edd_downloads_widget .downloads-category{
+	display:block;
+}
+
+
+/* Single Download */
+
+.edd-image-sliders {
+	width: 100%;
+	text-align: center;
+	padding: 10px;
+}
+a.edd-button-preview {		
+	padding: 10px;
+	font-size: 18px;
+}
+button.edd-image-button {
+	padding: 10px;
+	font-size: 18px;
+	line-height: 1.3;
+	border: none;
+	cursor: pointer;
+}
+
+/* Template 1 */
+
+.mystem-download-template-1 #content {
+	flex-wrap: wrap;
+}
+.mystem-download-template-1 .entry-header {
+	width: 100%;
+	margin: 0 10px 60px;
+	text-align: center;		
+}
+.mystem-download-template-1 .entry-header h1 {
+	font-size: 2em;
+	margin: 0 0 10px;
+	
+	
+}
+.mystem-download-template-1 .download-description{		
+	font-size: 1.2em;
+	margin-bottom: 50px;
+}
+
+/* EDD Login */
+#edd_login_form {
+	max-width: 200px;
+	margin: 0 auto;
+}
+#edd_login_form label {
+	display: block;
+}
+
+/* EDD Checkout */
+
+#edd_purchase_form #edd-purchase-button {
+	width: 100%;	
+	height: 60px;
+  line-height: 60px;
+  font-size: 1.25em;
+  cursor: pointer;
+	padding: 0;
+	font-weight: 700;
+}
+
+/* EDD Shortcodes */
+
+.edd-product.mystem-extra-downloads {
+	margin-bottom: 20px;
+}
+
+.edd-product .headline {
+	height: 66px;	
+	padding-left: 22px;
+	margin-bottom: 26px;
+	position: relative;
+}
+
+.edd-product .headline:before {
+	display: block;
+	content: '';
+	width: 6px;
+	height: 66px;	
+	position: absolute;	
+	left: 0;
+}
+
+.edd-product .headline h4 {
+	float: left;
+	line-height: 66px;
+	margin-bottom: 0;
+}
+.edd-product .headline .slide-control-wrap {
+	width: 66px;
+	top: 16px;
+	right: 16px;
+	position: absolute;
+}
+.edd-product .slide-control-left, .slide-control-right {
+	width: 30px;
+	height: 30px;
+	border-radius: 4px;    
+	cursor: pointer;
+	position: relative;
+	
+}
+.edd-product .slide-control-left {
+	float: left;
+}
+.edd-product .slide-control-left i {
+	left: 10px;
+}
+.edd-product .slide-control-right {
+	float: right;
+}
+.edd-product .slide-control-right i {		
+	right: 10px;
+}
+.edd-product .slide-control-left i, .edd-product .slide-control-right i {
+	
+	position: absolute;
+	top: 5px;
+	pointer-events: none;
+	font-size: 20px;
+}
+.edd-product .slider article{
+	margin: 0 10px;	
+}
+.edd-product .slider article .featured-img {	
+  height: 150px;
+}
+.edd-product .slider .entry-header{
+	padding: 0 10px;
+}
+.edd-product .slider .entry-summary {
+	padding: 10px;
+}
+.mystem-edd-cart sup {
+	margin-left: 5px;
+}
+
+/* Show Terms */
+ #edd_show_terms {
+     background: #eaeaea;
+     font-size:14px;
+     padding:4px 10px 4px 20px;
+     border-radius:3px;
+     margin-bottom:28px;
+     max-width:122px;
+}
+ .edd_terms_links{
+     color: #666;
+}
+ #edd_terms {
+     background: #f7f7f7;
+     color: #555;
+     font-size: 12px;
+     padding:14px 16px;
+     border: 3px solid #eaeaea;
+     border-radius: 4px 4px 4px 0;
+     margin-bottom: 0;
+     max-height:300px;
+     overflow: auto;
+}

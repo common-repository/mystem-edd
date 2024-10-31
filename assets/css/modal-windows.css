@@ -1,0 +1,90 @@
+.mystem-edd-modal-overlay{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	position: fixed; 
+	cursor: default; 
+	display: none; 
+	width: 100%; 
+	height: 100%; 
+	overflow: auto;
+}
+.mystem-edd-modal-overclose{
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	left: 0;
+	cursor: default;		
+	width: 100%; 
+	height: 100%;
+}
+.mystem-edd-modal-window{
+	margin: auto; 
+	display: none;
+}
+#mystem-edd-modal-overlay {	  
+	z-index: 99999; 
+	background-color: rgba(0, 0, 0, 0.7); 	 	  
+} 
+#mystem-edd-modal-overclose {	 
+	z-index: 99999; 	 
+} 
+#mystem-edd-modal-window{
+	width:550px; 
+	padding:10px;	
+	z-index:99999; 
+	position: absolute; 
+	top:10%;		
+	left:0%;	
+	right:0%;		
+	border-radius:4px; 		
+	height: auto;
+	margin-bottom:40px;	
+	
+}
+#mystem-edd-modal-close {
+	position: absolute; 
+	top: 10px; 
+	right: 10px;	 
+	font-size: 1em; 	
+	font-weight: bold; 
+	cursor:pointer; 	
+} 
+.mystem-edd-modal-window ul {	
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: normal;
+	list-style: none;
+	margin: 10px 0; 
+}
+.mystem-edd-modal-window li {
+	margin-bottom: 16px;
+	padding-left: 26px;
+	position: relative;	
+			
+}
+.mystem-edd-modal-window li:before {    
+    font-weight: 900;
+    position: absolute;
+    left: 10px;
+		font-family:"Font Awesome 5 Free";
+		content:"\f00c";		
+}
+
+.mystem-edd-modal-title {	
+	margin: -11px -11px 10px -11px;
+	padding:10px 11px;
+}
+.mystem-edd-modal-title h3 {	
+	margin-bottom: 0;
+}
+.mystem-edd-modal-window h4 {
+	font-size: 1.1em;
+}
+
+@media only screen and (max-width: 550px){
+	#mystem-edd-modal-window {
+		max-width:95%;
+	}
+}
